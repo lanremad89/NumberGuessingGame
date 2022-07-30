@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Guessing Game</title>
+</head>
+<body>
+    <h1>Guess the Number!</h1>
+    <p>I am thinking of a number between 1 and 100. Can you guess what it is?</p>
+ 
+<!-- the form onsubmit return false is used to not submit the data entered-->
+    <form onsubmit='return false;'>
+        <label for="guess">My Guess</label>
+        <input type="number" id="guess">
+        <input type="submit" id="submitGuess" value="Check My Guess">
+      </form>
+ <!-- the feedback ID will be used for generated response purposes when using the 'textContent' method -->
+    <p id="feedback"></p>
+    <script src="script.js"></script>
+  </body>
+</html>
